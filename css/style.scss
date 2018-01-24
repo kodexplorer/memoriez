@@ -1,0 +1,406 @@
+$turquoise: #41C4AB;
+
+body {
+	font: {
+		family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		size: 16px;
+		weight: 300;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font: {
+		family: "Raleway", "Halvetica Neue", Helvetica, Arial, sans-serif;
+		weight: 900;
+	}
+	text-transform: uppercase;
+}
+
+.img-centered {
+	margin: 0 auto;
+}
+img { border: 0; max-width: 100%; }
+
+.content-row {
+	margin-top: 30px;
+}
+
+section {
+	padding: 100px 0;
+}
+
+.bg-gray {
+	background-color: #f5f5f5;
+}
+
+.bg-blue {
+	background-color: #41C4AB;
+}
+
+a {
+	color: #41C4AB;
+  	-webkit-transition: all 0.5s;
+  	-moz-transition: all 0.5s;
+  	transition: all 0.5s;
+
+  	:hover,
+	:focus {
+  		color: inherit;
+  		text-decoration: none;
+	} 
+} 
+
+header {
+	background: no-repeat center center;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+	background-size: cover;
+	position: relative;
+	display: block;
+	height: auto;
+	width: auto;
+	padding: 200px 0;
+	color: #FFFFFF;
+	text-align: center;
+	text-shadow: 1px 1px 0 #555555, 1px 1px 3px rgba(0,0,0,0.1);
+
+	.brand-name {
+		font: {
+			family: "Raleway", "Halvetica Neue", Helvetica, Arial, sans-serif;
+			size: 55px;
+			weight: 900;	
+		}
+		line-height: 55px;
+		margin-top: 50px;
+	}
+
+	.brand-name-text {
+		font-size: 24px;
+		margin-bottom: 200px;
+	}
+
+	.scroll-down .btn {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100% !important;
+    line-height: 50px;
+    padding: 0;
+    letter-spacing: normal;
+    color: #FFFFFF;
+    font-size: 30px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+	}
+}
+
+.btn {
+    border-radius: 0;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+
+p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #5A6571;
+  font-family:  Arimo, sans-serif;
+
+  .lead {
+  	font: {
+  		family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  		weight: 900;
+  		size: 24px;	
+  	}
+  }
+}
+
+hr {
+	width: 15%;
+  	border-top: 1px solid white;
+  	border-bottom: 1px solid white;
+  	height: 2px;
+  	margin: 20px auto;
+} 
+
+hr.colored {
+  	border-color: #41C4AB;
+}
+hr.white {
+	border-color: #FFFFFF;
+	width: 20%;
+}
+
+/*----------------------------------------
+    NAV BAR STYLES
+------------------------------------------*/
+/* added padding in navbar */
+.navbar {
+    padding: 10px;
+    -webkit-transition: background .8s ease-out,padding .8s ease-out;
+    -moz-transition: background .8s ease-out,padding .8s ease-out;
+    transition: background .8s ease-out,padding .8s ease-out;
+}
+
+/*.navbar-default.navbar-expanded {
+    background: transparent;
+    border: none;
+} */
+
+
+.navbar-default {
+	background-color: transparent;
+	border: none !important;
+	
+	.navbar-brand {
+		font: {
+			family: 'Lovers Quarrel', cursive;
+			size: 60px;
+			weight: 595;
+		}
+		color: #41C4AB;
+		text-decoration: none;
+		text-shadow: 1px 1px 0 #000000;
+		padding: 20px 10px;
+	}
+
+	.navbar-toggle {
+  		color: #FFFFFF;
+  		font-size: 14px;
+  		padding: 6px 10px;
+	}
+
+	/* to make navbar links white color */
+	.navbar-nav > li > a {
+  		color: #FFFFFF;
+		font-size: 14px;
+	}
+
+	.navbar-nav li a:hover, .navbar-nav li a:focus, .navbar-nav li a:active {
+    	color:  #41C4AB;
+    	background-color: #FFFFFF;
+    	border-radius: 5px;
+	}
+
+	.collapse.in {
+	background-color: #000000 !important;
+}
+	
+	/* This get rids of the navbar-brand hover color(white) */
+	.navbar-brand:hover, .navbar-brand:focus  {
+		background-color: transparent;
+		color: #41C4AB;
+	} 
+}
+
+/*----------------------------------------
+    ABOUT SECTION
+------------------------------------------*/
+.about-me {
+	font-family: 'Delius Swash Caps', cursive;
+}
+/*----------------------------------------
+    SERVICES SECTION
+------------------------------------------*/
+/* .list-group */
+.list-group {
+	margin-top: 15px;
+	border-radius: 4x;
+
+	.fa {
+		text-shadow: 1px 1px 0 #41C4AB;
+	}
+	p {
+		font-size: 14px;
+		margin-left: 30px;
+		width: 224px;
+		word-wrap: break-word;	
+	}	
+}
+
+
+/*----------------------------------------
+    Quote Call to PORTFOLIO SECTION
+------------------------------------------*/
+.cta-quote {
+	color: #FFFFFF;
+	font-size: 36px;
+   	line-height: 38px;
+    background-color: #222;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding: 100px 0;
+	text-shadow: 1px 1px 0 #555555;
+	
+	.row {
+		margin-top: 30px;
+		.text-primary {
+			color: #41C4AB;
+		}
+	}	
+}
+.btn-outline-light {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;	
+}
+
+.btn-outline-light:hover {
+	background: #FFFFFF;
+	color: #41C4AB;
+	text-shadow: none;
+}
+
+
+/*----------------------------------------
+    PORTFOLIO GRID SECTION
+------------------------------------------*/
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+::selection { background: #a4dcec; }
+::-moz-selection { background: #a4dcec; }
+::-webkit-selection { background: #a4dcec; }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #ccc;
+  font-style: italic;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+  font-style: italic;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #ccc;
+  font-style: italic;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #ccc !important;
+  font-style: italic;  
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; } 
+
+
+/** reset lightbox position **/
+#lightbox-container-image-data-box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+#thumbnails { display: block; margin-bottom: 10px; } 
+#thumbnails .row .col-sm-3 { float: left;  margin-bottom: 21px; } 
+
+/** clearfix **/
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+/* ================================================================== */
+/* ================================================================== */
+
+
+
+
+/*----------------------------------------
+    CONTACT SECTION
+------------------------------------------*/
+#contact .fa {
+    color: #FFFFFF;
+	text-shadow: 1px 1px 0 #000000;
+}
+
+
+/*----------------------------------------
+    FOOTER SECTION
+------------------------------------------*/
+#footer {
+	padding: 40px 50px 20px 50px;
+	
+	.footer-logo {
+		font: {
+			family: 'Lovers Quarrel', cursive;
+			size: 35px;
+			weight: 545;
+		}
+		color: #41C4AB;
+		text-shadow: 1px 1px 0 	#028482;
+		margin-bottom: 20px;
+	}
+	
+	.fa:hover {
+		color: #000000;
+	}
+	
+	p {
+    	float: left;
+	}
+	
+	.up-arrow {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	p.copyright {
+		font-size: 12px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+} 
+
+
+
+
+
+
+@media (max-width: 767px) {
+	section {
+    	padding: 75px 0;
+  	}
+}
+
+@media (min-width: 481px) {
+	h1 {
+    	font-size: 52px;
+  	}
+  	h2 {
+    	font-size: 50px;
+  	}
+}
+
+ @media (min-width: 320px) and (max-width: 768px) {
+  	.list-group p {
+    	margin-left: auto;
+    	margin-right:auto;
+   }
+   
+   #footer .up-arrow {
+	   position: auto;
+       text-align: right;
+       top: -35px
+    }
+ }
+ 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 480px) {
+	.header {
+		background-image: url('img/bg/bg-small.jpg');
+	}
+}
